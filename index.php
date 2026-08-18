@@ -11,6 +11,7 @@
 </header>
 <main>
     <h2>Cadastrar Usuarios</h2>
+  <div>
     <form action="cadastrar_usuario.php" method="post">
         <label for="nome">Nome:</label>
         <input type="text" name="nome" required>
@@ -23,4 +24,16 @@
         <br>
         <button type="submit">Cadastrar</button>
     </form>
+    </div>
+
+    <div>
+        <form action="cadastrar_prato.php" method="post">
+            <label for="nome_prato">Nome do Prato:</label>
+            <input type="text" name="nome_prato" required>
+            <br>
+            <label for="descricao">Descrição:</label>
+            <textarea name="descricao" required></textarea>
+            <br>
+            <button type="submit">Cadastrar Prato</button>
+    </div>
 </main>
