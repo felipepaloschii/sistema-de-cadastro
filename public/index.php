@@ -20,12 +20,12 @@
         <input type="email"  name="email" required>
         <br>
        
-        <button type="submit">Cadastrar</button>
-    </form>
+
+    
     </div>
 
     <div>
-        <form action="cadastrar.php" method="post">
+        
             <label for="nome_prato">Nome do Prato:</label>
             <input type="text" name="nome_prato" required>
             <br>
@@ -40,6 +40,9 @@
             <br>
             <br>
 
-            <button type="submit">Cadastrar Prato</button>
-    </div>
+            <button type="submit">Cadastrar</button> 
+    </form>
+        </div>
+
+   
 </main>
