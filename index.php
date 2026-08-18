@@ -19,9 +19,7 @@
         <label for="email">Email:</label>
         <input type="email"  name="email" required>
         <br>
-        <label for="senha">Senha:</label>
-        <input type="password" name="senha" required>
-        <br>
+       
         <button type="submit">Cadastrar</button>
     </form>
     </div>
@@ -33,7 +31,12 @@
             <br>
             <label for="descricao">Descrição:</label>
             <textarea name="descricao" required></textarea>
+            <label for="preco">Preço:</label>
+            <input type="number" name="preco" step="0.01" required>
+            label for="categoria">Categoria:</label>
+            <select name="categoria" required>
             <br>
+
             <button type="submit">Cadastrar Prato</button>
     </div>
 </main>
