@@ -44,5 +44,35 @@
     </form>
         </div>
 
-   
+            <?php
+    include "../infra/conexao.php";
+
+    $sql = "SELECT pratos.id, pratos.nome, usuarios.nome AS usuario
+        FROM pratos
+        INNER JOIN usuarios ON pratos.usuario_id = usuarios.id";
+
+    $resultado = mysqli_query($conexao, $sql);
+?>
+
+
+   <div>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Prato</th>
+                <th>Usuário Responsável</th>
+            </tr>
+
+
+            <?php  while ($usuario = mysqli_fetch_assoc($resultado)) { ?>
+                <tr>
+                    <td><?php echo $usuario['id']; ?></td>
+                    <td><?php echo $usuario['nome']; ?></td>
+                    <td><?php echo $usuario['usuario']; ?></td>
+                </tr>
+            <?php } ?>
+        </tbody>
+    </table>
+   </div>
 </main>
