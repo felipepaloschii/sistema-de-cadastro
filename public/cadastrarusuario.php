@@ -5,9 +5,11 @@ include "../infra/conexao.php";
 $nome = $_POST["nome"];
 $email = $_POST["email"];
 
-$sql = "INSERT INTO usuarios (nome, email) VALUES ('$nome', '$email')";
+$sql = "INSERT INTO usuarios (nome, email) VALUES (?, ?)";
 
-mysqli_query($conexao, $sql);
+$stmt = mysqli_prepare($conexao, $sql);
+mysqli_stmt_bind_param($stmt, "ss", $nome, $email);
+mysqli_stmt_execute($stmt); 
 
-header("Location: ../index.php");
+header("Location: ../public/index.php");
 ?>

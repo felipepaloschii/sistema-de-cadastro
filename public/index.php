@@ -12,7 +12,7 @@
 <main>
     <h2>Cadastrar Usuarios</h2>
   <div>
-    <form action="cadastrar_usuario.php" method="post">
+    <form action="cadastrarusuario.php" method="post">
         <label for="nome">Nome:</label>
         <input type="text" name="nome" required>
         <br>
@@ -25,7 +25,7 @@
     </div>
 
     <div>
-        <form action="cadastrar_prato.php" method="post">
+        <form action="cadastrar.php" method="post">
             <label for="nome_prato">Nome do Prato:</label>
             <input type="text" name="nome_prato" required>
             <br>
