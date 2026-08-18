@@ -31,10 +31,13 @@
             <br>
             <label for="descricao">Descrição:</label>
             <textarea name="descricao" required></textarea>
+            <br>
             <label for="preco">Preço:</label>
             <input type="number" name="preco" step="0.01" required>
-            label for="categoria">Categoria:</label>
-            <select name="categoria" required>
+            <br>
+            <label for="categoria">Categoria:</label>
+            <input type="text" name="categoria" required>
+            <br>
             <br>
 
             <button type="submit">Cadastrar Prato</button>
