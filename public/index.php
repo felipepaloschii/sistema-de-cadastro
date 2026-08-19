@@ -19,13 +19,13 @@
         <label for="email">Email:</label>
         <input type="email"  name="email" required>
         <br>
-       
-
+        
+    </form>
     
     </div>
 
     <div>
-        
+        <form action="cadastrar.php" method="post">
             <label for="nome_prato">Nome do Prato:</label>
             <input type="text" name="nome_prato" required>
             <br>
@@ -41,8 +41,9 @@
             <br>
 
             <button type="submit">Cadastrar</button> 
-    </form>
+
         </div>
+    </form>
 
             <?php
     include "../infra/conexao.php";
